@@ -20,7 +20,7 @@ public class NumberWizard : MonoBehaviour
 
     public void OnPressHigher()
     {
-        min = guess;
+        min = guess + 1 < max - 1 ? guess + 1 : max - 1;
         NextGuess();
     }
 
@@ -32,7 +32,10 @@ public class NumberWizard : MonoBehaviour
     
     private void NextGuess()
     {
-        guess = (max + min) / 2;
+        //guess = (max + min) / 2;
+        guess = Random.Range(min, max);
+        if (max < 1)
+            max = 1;
         guessText.text = guess.ToString();
     }
 }
