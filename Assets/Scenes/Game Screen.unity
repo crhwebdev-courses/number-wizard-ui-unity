@@ -901,7 +901,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max: 1000
   min: 1
-  guess: 500
   guessText: {fileID: 302738159}
 --- !u!4 &865039376
 Transform:
@@ -973,7 +972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Success
+  m_text: Correct
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4d0af870e3e98f43afeabf6007c1343, type: 2}
   m_sharedMaterial: {fileID: -6581076779073879814, guid: f4d0af870e3e98f43afeabf6007c1343,
